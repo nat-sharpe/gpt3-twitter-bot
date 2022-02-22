@@ -14,13 +14,13 @@ const twitterClient = new TwitterApi({
 
 const callbackURL = 'http://127.0.0.1:5000/faxnow-app/us-central1/callback';
 
-// OpenAI API init
-const { Configuration, OpenAIApi } = require('openai');
-const configuration = new Configuration({
-  organization: 'YOUR_OPENAI_ORG',
-  apiKey: 'YOUR_OPENAI_SECRET',
-});
-const openai = new OpenAIApi(configuration);
+// // OpenAI API init
+// const { Configuration, OpenAIApi } = require('openai');
+// const configuration = new Configuration({
+//   organization: 'YOUR_OPENAI_ORG',
+//   apiKey: 'YOUR_OPENAI_SECRET',
+// });
+// const openai = new OpenAIApi(configuration);
 
 // STEP 1 - Auth URL
 exports.auth = functions.https.onRequest((request, response) => {
